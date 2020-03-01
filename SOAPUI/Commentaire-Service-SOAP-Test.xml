@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3ce4e90a-4416-4618-a01c-bad01b618e68" activeEnvironment="Default" name="Commentaire_Service_SOAP" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="63edddc3-114e-4d26-a9ae-be65d4be5ce8" wsaVersion="NONE" name="CommentaireServiceImplementationPortBinding" type="wsdl" bindingName="{http://service.commentaires.cours.coffreo.com/}CommentaireServiceImplementationPortBinding" soapVersion="1_1" anonymous="optional" definition="http://alex-pc:8080/CommentaireServiceSOAP/Commentaires?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:endpoints><con:endpoint>http://alex-pc:8080/CommentaireService/Commentaires</con:endpoint><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:endpoint>http://alex-pc:8080/TP_note/Commentaires</con:endpoint></con:endpoints><con:operation id="61e0600b-b168-4d9c-aa99-8a7b5baa046a" isOneWay="false" action="" name="create" bindingOperationName="create" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3cc28f3f-d67c-46ae-bcc5-e1613e43f9a7" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://commentaires.cours.coffreo.com/CommentaireServiceImplementation/createRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="7a996192-17ba-4052-9d1e-b8befa4076a7" isOneWay="false" action="" name="delete" bindingOperationName="delete" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0d5b6a4f-9ed4-41ae-8bb3-43f6ea072327" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:delete/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://commentaires.cours.coffreo.com/CommentaireServiceImplementation/deleteRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="4084f94d-204b-4d0a-914c-71b7a2692d94" isOneWay="false" action="" name="read" bindingOperationName="read" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="db608d40-c2eb-463b-9f79-bcf17d64ba08" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Cache-Control" value="no-cache, no-store, must-revalidate"/>
+  &lt;con:entry key="Discard Responses" value="true"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:read/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://commentaires.cours.coffreo.com/CommentaireServiceImplementation/readRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="498606bc-b7be-425c-ac74-9cc1cde5a5d6" isOneWay="false" action="" name="readAll" bindingOperationName="readAll" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="76dc73e7-1f34-46ec-a82c-61a3d6c795d2" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:readAll/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://commentaires.cours.coffreo.com/CommentaireServiceImplementation/readAllRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="317063f2-9cee-4c68-9c44-38aa40d074ea" isOneWay="false" action="" name="update" bindingOperationName="update" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ba286378-2d4d-42b3-984c-3c496946e79b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:update/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://commentaires.cours.coffreo.com/CommentaireServiceImplementation/updateRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="99ef9ed5-2e7c-49ba-9cf6-84fca3282d0b" isOneWay="false" action="" name="deleteAllComments" bindingOperationName="deleteAllComments" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f0e007b9-e739-4b14-93e5-9d17a6dcb979" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:deleteAllComments/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://commentaires.cours.coffreo.com/CommentaireServiceImplementation/deleteAllCommentsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="c8520fd6-e8fb-4299-b0d8-942d2527a856" name="Tests"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="28f2c3e7-9822-4fc2-aa74-ef553d1e7d26" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Tests fonctionnement global :CRUD" searchProperties="true" discardOkResults="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings><con:setting id="HttpSettings@socket_timeout">1000</con:setting></con:settings><con:testStep type="request" name="Clear data" id="9e325941-78ed-47c7-94d6-fdf07c89aecc"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>deleteAllComments</con:operation><con:request name="Clear data" id="c29a3b06-f6df-4005-942b-e745d5d7b9f7"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:deleteAllComments/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4e23cf79-8866-4a00-aef3-b7199f2a9d72"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Show all requests saved" id="b343fa4d-f7f8-4581-85ce-a1e9a6cfc15a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>readAll</con:operation><con:request name="Show all requests saved" id="f2197777-d10f-431f-aed4-eb61a4a36c29"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:readAll/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="e8757f61-3b11-43bb-b074-a619763dffa3"/><con:assertion type="Simple Contains" id="57b1c9b0-ecb4-4fbc-946a-d00a0eb87c4f" name="Contains"><con:configuration><token>no comments saved</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Add comment" id="4ea0e665-585c-4c68-8a85-0f41cc116681"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Add comment" id="00206af5-e268-4ab9-acf6-bf9505d93ef2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>a fan</auteur>
+            <!--Optional:-->
+            <dateCreation>2020-02-20T20:02:20</dateCreation>
+            <!--Optional:-->
+            <id>1</id>
+            <!--Optional:-->
+            <titre>Still some tests, stay focus!</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c11bf6b1-bc41-4343-a932-d299faad4ffc"/><con:assertion type="Schema Compliance" id="e0917567-0db1-43c1-96c4-024a190f2341"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="e4acbf0c-94c1-4290-9818-798921bc8099" name="Not SOAP Fault"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read comment" id="476d500e-8cf2-4edd-b241-ea2d4bcfb7ba"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>read</con:operation><con:request name="Read comment" id="177be33e-8263-429b-a23c-d82e75f79329"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="discardResponse">true</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:read>
+         <!--Optional:-->
+         <id>1</id>
+      </ser:read>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="3d106fab-6d0d-42af-9dae-d31ba40ca1c2"/><con:assertion type="Schema Compliance" id="855eefc0-e88b-4c65-8410-e45383395ac8"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="35dcfb7c-968e-43a3-8e9d-ac4da9fe25ea" name="Not SOAP Fault"/><con:assertion type="Simple Contains" id="d47c429f-4ddc-403a-bb54-feb574a5d26e" name="Contains"><con:configuration><token>(?s).*&lt;id>(.*?)&lt;/id>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update comment" id="0a1a50fd-636f-4702-9c7a-4444df0aa2d4"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>update</con:operation><con:request name="Update comment" id="705d0c00-41c3-44d4-9c01-0f6c94e145db"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+	<ser:update>
+         <!--Optional:-->
+         <id>1</id>
+         <!--Optional:-->
+         <nouveau_commentaire>
+            <!--Optional:-->
+            <auteur>AlexBest</auteur>
+            <!--Optional:-->
+            <dateCreation>?</dateCreation>
+            <!--Optional:-->
+            <id>1</id>
+            <!--Optional:-->
+            <titre>?</titre>
+         </nouveau_commentaire>
+      </ser:update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="9bdb25dc-f63a-4df2-8b04-39d0c2ccf572"/><con:assertion type="Schema Compliance" id="6cf78073-bf8b-4467-9626-3f2b83c9c0d1"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="e037ff40-ea77-4546-8236-33ea65b9ce4a"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read updated comment" id="becc8fd7-dd73-4bbe-bc6e-9308b09b24b6"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>read</con:operation><con:request name="Read updated comment" id="177be33e-8263-429b-a23c-d82e75f79329"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="discardResponse">true</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:read>
+         <!--Optional:-->
+         <id>1</id>
+      </ser:read>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="3d106fab-6d0d-42af-9dae-d31ba40ca1c2"/><con:assertion type="Schema Compliance" id="855eefc0-e88b-4c65-8410-e45383395ac8"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="35dcfb7c-968e-43a3-8e9d-ac4da9fe25ea" name="Not SOAP Fault"/><con:assertion type="Simple Contains" id="d47c429f-4ddc-403a-bb54-feb574a5d26e" name="Contains"><con:configuration><token>(?s).*&lt;id>(.*?)&lt;/id>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="6bf87506-efe8-451d-ac0d-0181fcf29fe1" name="Contain updated auteur"><con:configuration><token>(?s).*&lt;auteur>(AlexBest)&lt;/auteur>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Add second comment" id="4c7e39ff-b88f-4db1-8841-fee5366a0ddf"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Add second comment" id="a70f81a9-1c02-4943-ae6a-2c14ff752741"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>Toto</auteur>
+            <!--Optional:-->
+            <dateCreation>2020-02-20T20:02:20</dateCreation>
+            <!--Optional:-->
+            <id>5</id>
+            <!--Optional:-->
+            <titre>Super toto comment</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="10f59db7-1df6-4406-9002-e41b33375142"/><con:assertion type="Schema Compliance" id="82a615e5-7abe-4606-9bc6-c0669491eec2"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="a4848036-cec8-4dc5-b962-ec59320fdde6"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read all comments" id="fb9ae76a-6189-4c4e-89ca-379b549c03e5"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>read</con:operation><con:request name="Read all comments" id="e34a4574-6f49-4cc7-9ad5-df8be5694661"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:readAll/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b7495868-7406-48a2-a8c4-bef56aea7471"/><con:assertion type="SOAP Fault Assertion" id="28bfc5f7-3fdf-43e7-8c13-363b37139246"/><con:assertion type="Simple Contains" id="81d369b0-f7bb-48dc-a47b-ff5a45c33642" name="Contains"><con:configuration><token>(?s).*(There are 2 comments:).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="232b2b4c-055d-42be-abd2-e784844f98bf" name="Contains comment 1"><con:configuration><token>(?s).*(id=1).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="232b2b4c-055d-42be-abd2-e784844f98bf" name="Contains comment 2"><con:configuration><token>(?s).*(id=5).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Delete comment Toto" id="3adba56d-d1d9-45d9-90aa-fed18408083d"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>delete</con:operation><con:request name="Delete comment Toto" id="cb5666db-f41c-4e03-a153-ba55fd203429"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:delete>
+         <!--Optional:-->
+         <id>5</id>
+      </ser:delete>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8bbabaf4-f3e0-446a-8e7e-e22e1f077460"/><con:assertion type="Schema Compliance" id="5c15601c-5a25-420c-af5b-5551968b80be"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="b403e9bd-1b34-4226-82e3-c230752b6bb8"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read all comments after deleting Toto comment" id="c1157bd4-11bd-4d7d-84ab-990012519c25"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>read</con:operation><con:request name="Read all comments after deleting Toto comment" id="e34a4574-6f49-4cc7-9ad5-df8be5694661"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:readAll/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b7495868-7406-48a2-a8c4-bef56aea7471"/><con:assertion type="SOAP Fault Assertion" id="28bfc5f7-3fdf-43e7-8c13-363b37139246"/><con:assertion type="Simple Contains" id="81d369b0-f7bb-48dc-a47b-ff5a45c33642" name="Contains"><con:configuration><token>(?s).*(There is 1 comment:).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="232b2b4c-055d-42be-abd2-e784844f98bf" name="Contains comment 1"><con:configuration><token>(?s).*(id=1).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Delete comment Alex" id="87423744-3208-4869-b3de-e141b264d194"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>delete</con:operation><con:request name="Delete comment Alex" id="cb5666db-f41c-4e03-a153-ba55fd203429"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:delete>
+         <!--Optional:-->
+         <id>1</id>
+      </ser:delete>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8bbabaf4-f3e0-446a-8e7e-e22e1f077460"/><con:assertion type="Schema Compliance" id="5c15601c-5a25-420c-af5b-5551968b80be"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="b403e9bd-1b34-4226-82e3-c230752b6bb8"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read all comments after deleting Alex comment" id="bea7db42-ac71-495a-ac53-b138adc96fb5"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>read</con:operation><con:request name="Read all comments after deleting Alex comment" id="e34a4574-6f49-4cc7-9ad5-df8be5694661"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:readAll/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b7495868-7406-48a2-a8c4-bef56aea7471"/><con:assertion type="SOAP Fault Assertion" id="28bfc5f7-3fdf-43e7-8c13-363b37139246"/><con:assertion type="Simple Contains" id="81d369b0-f7bb-48dc-a47b-ff5a45c33642" name="Contains"><con:configuration><token>(?s).*(There is no comments saved).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="122327ba-cae8-4dff-88f0-8de0d9772cb7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Creation" searchProperties="true"><con:settings/><con:testStep type="request" name="Delete all comments" id="474b4a2b-c4aa-43b0-a51c-5543870cbd19"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>deleteAllComments</con:operation><con:request name="Delete all comments" id="36abe89f-e58c-47ee-b160-087ce5c6f87f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:deleteAllComments/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6098e3f9-a624-456b-a13c-2e35cf948a3d"/><con:assertion type="Schema Compliance" id="c27733a2-49e1-41da-8fc6-e3b6ec5d8a68"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="02411f39-3b09-4484-a641-f31df8241f7e"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Creation Invalid: empty" id="f1f37836-b269-4ffa-9a2a-67ce8586b789"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Creation Invalid: empty" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+          <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>OUI</auteur>
+            <!--Optional:-->
+            <dateCreation>15</dateCreation>
+            <!--Optional:-->
+            <id>?</id>
+            <!--Optional:-->
+            <titre>Alex</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(A comment ID is required for creation)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Creation Invalid: empty 2" id="e2bd0e0b-70ff-45d5-8e11-0f3db5140797"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Creation Invalid: empty 2" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(A comment is required for creation)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Creation Invalid: no id 1" id="12754f6a-afe5-4d0e-ba11-2690cd533318"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Creation Invalid: no id 1" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+          <!--Optional:-->
+         <commentaire>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(A comment ID is required for creation)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Creation Invalid: no id 2" id="c61f9e34-5431-43cf-9899-b7e3ea1b702e"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Creation Invalid: no id 2" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+	    <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>OUI</auteur>
+            <!--Optional:-->
+            <titre>Alex</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(A comment ID is required for creation)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Creation Invalid: no id 3" id="77c70dd5-562e-4e84-8b61-a955a3bc8c2e"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Creation Invalid: no id 3" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>OUI</auteur>
+            <!--Optional:-->
+            <dateCreation>15</dateCreation>
+            <!--Optional:-->
+            <titre>Alex</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(A comment ID is required for creation)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Creation valid 1" id="8ce03075-ccd1-4468-87c6-1e3327cba908"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Creation valid 1" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>Toto</auteur>
+            <!--Optional:-->
+            <dateCreation>2020-02-26T11:20:08</dateCreation>
+            <!--Optional:-->
+            <id>15</id>
+            <!--Optional:-->
+            <titre>Toto en vacances</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="00f64a88-2ace-4231-aaba-391f49372e57" name="Not SOAP Fault"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Creation Invalid: id already used" id="33635ae0-dd3e-4846-8aeb-5808884de4e1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Creation Invalid: id already used" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <id>15</id>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(A comment already exist for this ID, please select another ID)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Creation valid 2" id="dc3ef343-4dff-4ba2-a398-db42c1d72a79"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Creation valid 2" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>MichMich</auteur>
+            <!--Optional:-->
+            <id>10</id>
+            <!--Optional:-->
+            <titre>Michich à la plage</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="00f64a88-2ace-4231-aaba-391f49372e57" name="Not SOAP Fault"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5d94370a-e353-4095-84df-8c1547efd218" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Update" searchProperties="true"><con:settings/><con:testStep type="request" name="Clear all comments" id="563ffa98-5a52-4ad0-b459-1fc2e4e50271"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>deleteAllComments</con:operation><con:request name="Clear all comments" id="a37f24ed-c4f8-4e13-a5c7-d1925cd4bf03"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:deleteAllComments/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c8307e13-5247-4a1a-9fa4-7f523b76e0bf"/><con:assertion type="Schema Compliance" id="ee565c68-9b81-499a-8e69-929151422d60"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="82017151-9ba4-4033-9030-1f7df1071314"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Create 1 comment" id="4260b35d-cdae-4817-aa1a-10128b0a79cb"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Create 1 comment" id="fe7c5eea-ec99-4c77-a8f9-b00fc3b08104"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>A fan</auteur>
+            <!--Optional:-->
+            <id>1</id>
+            <!--Optional:-->
+            <titre>Alex seems to be the best</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="dac2b4f2-4a8f-4fe2-9067-837bca1e637c"/><con:assertion type="Schema Compliance" id="ad0241db-27bc-4f73-8d42-ed94d326704f"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="0dde7bad-00b4-40b4-8642-a67f569591fe"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update INVALID: no ID 1" id="079cf6c2-b42d-479b-a412-ef9557043ee7"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>update</con:operation><con:request name="Update INVALID: no ID 1" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:update/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID of the comment to update is required)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update INVALID: no ID 2" id="b137b93a-91df-4425-88d2-6a3856a06935"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>update</con:operation><con:request name="Update INVALID: no ID 2" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+	<ser:update>
+      </ser:update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID of the comment to update is required)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update INVALID: no ID 3" id="a51b900c-4cff-4ad2-8550-36d199c4d3a3"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Update INVALID: no ID 3" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+	<ser:update>
+      	<!--Optional:-->
+      	<id>1</id>
+      </ser:update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(A comment is required for update)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update INVALID: no new comment 1" id="1e9a6d5b-a47c-4749-9487-a930ef7245a0"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Update INVALID: no new comment 1" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+	<ser:update>
+      	<!--Optional:-->
+      	<id>1</id>
+      </ser:update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(A comment is required for update)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update INVALID: new comment without ID 1" id="5a2cc3cf-97bd-4518-937a-29e93f7c6483"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>update</con:operation><con:request name="Update INVALID: new comment without ID 1" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:update>
+         <!--Optional:-->
+         <id>?</id>
+         <!--Optional:-->
+         <nouveau_commentaire>
+            <!--Optional:-->
+            <auteur>?</auteur>
+            <!--Optional:-->
+            <dateCreation>?</dateCreation>
+            <!--Optional:-->
+            <id>?</id>
+            <!--Optional:-->
+            <titre>?</titre>
+         </nouveau_commentaire>
+      </ser:update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID in the new comment is required)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update INVALID: new comment without ID 2" id="739b6467-59da-44b0-9da3-ae74447ab0bc"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Update INVALID: new comment without ID 2" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+	<ser:update>
+      <!--Optional:-->
+         <id>1</id>
+         <!--Optional:-->
+         <nouveau_commentaire>
+            <!--Optional:-->
+            <auteur>Fan n°2</auteur>
+            <!--Optional:-->
+            <titre>My update isn't valid</titre>
+         </nouveau_commentaire>
+      </ser:update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID in the new comment is required)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update INVALID: new comment without ID 3" id="79e2fa66-ca0e-4c8e-8b17-9a44261ada98"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Update INVALID: new comment without ID 3" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+	<ser:update>
+	    <!--Optional:-->
+         <id>1</id>
+         <!--Optional:-->
+         <nouveau_commentaire>
+            <!--Optional:-->
+            <auteur>Dummy 3</auteur>
+            <!--Optional:-->
+            <dateCreation>2020-02-20T20:02:20</dateCreation>
+            <!--Optional:-->
+            <titre>My update is still not valid</titre>
+         </nouveau_commentaire>
+      </ser:update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID in the new comment is required)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update INVALID: unexisting comment" id="2da723ea-a2c8-4da9-9613-1e9e3a226004"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Update INVALID: unexisting comment" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+	<ser:update>
+         <!--Optional:-->
+         <id>5</id>
+         <!--Optional:-->
+         <nouveau_commentaire>
+            <!--Optional:-->
+            <id>5</id>
+            <!--Optional:-->
+            <auteur>Dummy 3</auteur>
+            <!--Optional:-->
+            <dateCreation>2020-02-20T20:02:20</dateCreation>
+            <!--Optional:-->
+            <titre>Research ID doesn't exist</titre>
+         </nouveau_commentaire>
+      </ser:update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID doesn't match any comments)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update VALID" id="87b5856b-13b1-44da-aed8-4b3efc061b03"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Update VALID" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+	<ser:update>
+         <!--Optional:-->
+         <id>1</id>
+         <!--Optional:-->
+         <nouveau_commentaire>
+            <!--Optional:-->
+            <id>5</id>
+            <!--Optional:-->
+            <auteur>Fan n°2</auteur>
+            <!--Optional:-->
+            <dateCreation>2020-02-20T20:02:20</dateCreation>
+            <!--Optional:-->
+            <titre>Update finally works !</titre>
+         </nouveau_commentaire>
+      </ser:update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="SOAP Fault Assertion" id="5aea58c7-9f4c-43dd-9fd1-6bd1c72a620a" name="Not SOAP Fault"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read comment update" id="3cc4e902-4354-4e5a-aa41-69334549a307"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>read</con:operation><con:request name="Read comment update" id="8685c2d7-2d33-4294-aedf-f4acf4308276"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:read>
+         <!--Optional:-->
+         <id>5</id>
+      </ser:read>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="3fc4f650-0c28-421d-a1e9-7d5d57f94da6"/><con:assertion type="Schema Compliance" id="9119296f-2ff1-4515-8efd-a556256796eb"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="4296215f-a8c5-4ad8-bde7-48c7a5cc7557" name="Not SOAP Fault"/><con:assertion type="Simple Contains" id="7f373f3c-4c8f-4c88-ab58-0d07f6329a7f" name="Contains"><con:configuration><token>(?s).*&lt;auteur>(Fan n°2)&lt;/auteur>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="7f373f3c-4c8f-4c88-ab58-0d07f6329a7f" name="Contains date"><con:configuration><token>(?s).*&lt;dateCreation>(2020-02-20T20:02:20)&lt;/dateCreation>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="7f373f3c-4c8f-4c88-ab58-0d07f6329a7f" name="Contains id"><con:configuration><token>(?s).*&lt;id>(5)&lt;/id>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="7f373f3c-4c8f-4c88-ab58-0d07f6329a7f" name="Contains titre"><con:configuration><token>(?s).*&lt;titre>(Update finally works !)&lt;/titre>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read old comment: unexisting comment" id="aa77446c-87cc-4680-b7c7-a56e97112b2e"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Read old comment: unexisting comment" id="2d76b077-51db-49de-a47c-02f99b24bb85"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:read>
+         <!--Optional:-->
+         <id>1</id>
+      </ser:read>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503bb9ae-d293-4ff3-b00a-60f081b54de3"/><con:assertion type="Schema Compliance" id="8d2f5340-c988-4a39-8911-04d456445654"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="fc391280-06e0-49ee-9f15-2294cb1eb266" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID doesn't match any comments)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="377afd62-79cf-43e9-9be8-81662ceadcc3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Delete" searchProperties="true"><con:settings/><con:testStep type="request" name="Clear data" id="a3bed326-51ba-46b9-8dc3-64e4bc10d846"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>deleteAllComments</con:operation><con:request name="Clear data" id="da96dc34-a79f-4271-9e93-0008a83967d4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:deleteAllComments/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="0ad45e3a-e47c-4473-a94d-7a649b01d3e2"/><con:assertion type="Schema Compliance" id="133ff81c-b63b-4965-a55e-61c1c6b95fbd"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="14fe671d-74cd-4ae3-ace5-fbe2f5c06986"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Create 1 comment" id="1a1ce6e8-6808-46ec-882c-e7848d9e561f"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Create 1 comment" id="fe7c5eea-ec99-4c77-a8f9-b00fc3b08104"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>A fan</auteur>
+            <!--Optional:-->
+            <id>1</id>
+            <!--Optional:-->
+            <titre>Alex rank seems to be close to 20</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="dac2b4f2-4a8f-4fe2-9067-837bca1e637c"/><con:assertion type="Schema Compliance" id="ad0241db-27bc-4f73-8d42-ed94d326704f"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="0dde7bad-00b4-40b4-8642-a67f569591fe"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Delete INVALID: no id" id="cea366ac-746b-4642-a9a2-13d7307d1a27"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>delete</con:operation><con:request name="Delete INVALID: no id" id="50582be4-30fb-466f-bd9d-5054fdb3deb1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:delete/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7809ef3d-f5bb-49c0-885b-02d5301c2509"/><con:assertion type="Schema Compliance" id="e17a12e7-1cd9-487a-91ae-54f4763c44f8"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID is required to delete a comment)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Delete INVALID: no id 2" id="986bf54c-a73c-43e6-bdef-4a1517e79330"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>delete</con:operation><con:request name="Delete INVALID: no id 2" id="50582be4-30fb-466f-bd9d-5054fdb3deb1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:delete>
+      </ser:delete>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7809ef3d-f5bb-49c0-885b-02d5301c2509"/><con:assertion type="Schema Compliance" id="e17a12e7-1cd9-487a-91ae-54f4763c44f8"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID is required to delete a comment)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Delete INVALID: unexisting comment" id="3bb39e05-64b4-4972-b5cd-da7a0aa40167"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>delete</con:operation><con:request name="Delete INVALID: unexisting comment" id="50582be4-30fb-466f-bd9d-5054fdb3deb1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:delete>
+         <!--Optional:-->
+      	<id>0</id>
+      </ser:delete>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7809ef3d-f5bb-49c0-885b-02d5301c2509"/><con:assertion type="Schema Compliance" id="e17a12e7-1cd9-487a-91ae-54f4763c44f8"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID doesn't match any comments)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Delete Success" id="c5aab67e-6b74-4add-b8bb-1c3a5675c5af"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>delete</con:operation><con:request name="Delete Success" id="82e83e68-da1b-4bc7-8190-91415cdb2679"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:delete>
+         <!--Optional:-->
+         <id>1</id>
+      </ser:delete>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="3d2a33ee-13da-4d4d-8a2d-885d8879b923"/><con:assertion type="Schema Compliance" id="f15e90dc-1fbd-49be-8c49-4f3f929330cd"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="2bcb0b9f-d4c3-4e5b-a028-7c1a8146fae2"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Check Deletion" id="c81c1203-3801-49ec-8d24-de3ae3215feb"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>read</con:operation><con:request name="Check Deletion" id="50582be4-30fb-466f-bd9d-5054fdb3deb1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:read>
+         <!--Optional:-->
+         <id>?</id>
+      </ser:read>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7809ef3d-f5bb-49c0-885b-02d5301c2509"/><con:assertion type="Schema Compliance" id="e17a12e7-1cd9-487a-91ae-54f4763c44f8"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID doesn't match any comments)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e58989b1-69f2-4836-9674-229c5328db88" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Read" searchProperties="true"><con:settings/><con:testStep type="request" name="Clear data" id="26be7699-cbbd-4f68-86a8-72acb4bd6f0e"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>deleteAllComments</con:operation><con:request name="Clear data" id="351b7965-3080-4600-8f70-2c5b8ef249b1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:deleteAllComments/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7b7f68a9-59db-4525-9e58-1b781651a7c8"/><con:assertion type="Schema Compliance" id="3e229493-c609-468a-8023-fa34dc0e3f72"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="6d6f19ed-d23b-48d5-b676-888adc3b91af"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Create 1 comment" id="3dff7a86-4b3a-4fff-8924-55603d9f7401"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Create 1 comment" id="fe7c5eea-ec99-4c77-a8f9-b00fc3b08104"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>Alex</auteur>
+            <!--Optional:-->
+            <dateCreation>2020-02-20T20:02:20</dateCreation>
+            <!--Optional:-->
+            <id>1</id>
+            <!--Optional:-->
+            <titre>Alex rank seems to be close to 20</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="dac2b4f2-4a8f-4fe2-9067-837bca1e637c"/><con:assertion type="Schema Compliance" id="ad0241db-27bc-4f73-8d42-ed94d326704f"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="0dde7bad-00b4-40b4-8642-a67f569591fe"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read INVALID: no id" id="e7ec4fc3-d9a2-4ef2-8dae-134bcf6986d0"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>delete</con:operation><con:request name="Read INVALID: no id" id="50582be4-30fb-466f-bd9d-5054fdb3deb1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:read>
+      </ser:read>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7809ef3d-f5bb-49c0-885b-02d5301c2509"/><con:assertion type="Schema Compliance" id="e17a12e7-1cd9-487a-91ae-54f4763c44f8"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID is required to find a comment)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read INVALID: unexisting id" id="59bfaa28-d374-4727-afe6-21c478f94349"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>delete</con:operation><con:request name="Read INVALID: unexisting id" id="50582be4-30fb-466f-bd9d-5054fdb3deb1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:read>
+         <!--Optional:-->
+         <id>2</id>
+      </ser:read>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7809ef3d-f5bb-49c0-885b-02d5301c2509"/><con:assertion type="Schema Compliance" id="e17a12e7-1cd9-487a-91ae-54f4763c44f8"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault"><con:configuration><token>(?s).*&lt;faultcode>(S.Server)&lt;/faultcode>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="ee195f27-b18f-41b0-8482-092d028ef4a1" name="Contains fault message"><con:configuration><token>(?s).*&lt;faultstring>(ID doesn't match any comments)&lt;/faultstring>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read VALID: check info" id="d99509ff-c3b5-4682-9927-083923ea1cf5"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>read</con:operation><con:request name="Read VALID: check info" id="8685c2d7-2d33-4294-aedf-f4acf4308276"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:read>
+         <!--Optional:-->
+         <id>1</id>
+      </ser:read>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="3fc4f650-0c28-421d-a1e9-7d5d57f94da6"/><con:assertion type="Schema Compliance" id="9119296f-2ff1-4515-8efd-a556256796eb"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="4296215f-a8c5-4ad8-bde7-48c7a5cc7557" name="Not SOAP Fault"/><con:assertion type="Simple Contains" id="7f373f3c-4c8f-4c88-ab58-0d07f6329a7f" name="Contains"><con:configuration><token>(?s).*&lt;auteur>(Alex)&lt;/auteur>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="7f373f3c-4c8f-4c88-ab58-0d07f6329a7f" name="Contains date"><con:configuration><token>(?s).*&lt;dateCreation>(2020-02-20T20:02:20)&lt;/dateCreation>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="7f373f3c-4c8f-4c88-ab58-0d07f6329a7f" name="Contains id"><con:configuration><token>(?s).*&lt;id>(1)&lt;/id>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="7f373f3c-4c8f-4c88-ab58-0d07f6329a7f" name="Contains titre"><con:configuration><token>(?s).*&lt;titre>(Alex rank seems to be close to 20)&lt;/titre>.*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="db64ca50-0ff4-4add-8a39-91aadad69c50" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ReadAll" searchProperties="true"><con:settings/><con:testStep type="request" name="Clear data" id="893d75b7-f9dd-481f-8358-5a0934daf365"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>deleteAllComments</con:operation><con:request name="Clear data" id="351b7965-3080-4600-8f70-2c5b8ef249b1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:deleteAllComments/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7b7f68a9-59db-4525-9e58-1b781651a7c8"/><con:assertion type="Schema Compliance" id="3e229493-c609-468a-8023-fa34dc0e3f72"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="6d6f19ed-d23b-48d5-b676-888adc3b91af"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read all comments: no comment" id="b7978ef3-b4e4-4755-a15c-5c73fc36c9e7"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>readAll</con:operation><con:request name="Read all comments: no comment" id="e34a4574-6f49-4cc7-9ad5-df8be5694661"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:readAll/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b7495868-7406-48a2-a8c4-bef56aea7471"/><con:assertion type="SOAP Fault Assertion" id="28bfc5f7-3fdf-43e7-8c13-363b37139246"/><con:assertion type="Simple Contains" id="81d369b0-f7bb-48dc-a47b-ff5a45c33642" name="Contains"><con:configuration><token>(?s).*(There is no comments saved).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Create 1 comment" id="00fba766-78e6-44a4-9f49-a6577a671631"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Create 1 comment" id="fe7c5eea-ec99-4c77-a8f9-b00fc3b08104"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>Alex</auteur>
+            <!--Optional:-->
+            <dateCreation>2020-02-20T20:02:20</dateCreation>
+            <!--Optional:-->
+            <id>1</id>
+            <!--Optional:-->
+            <titre>Alex rank seems to be close to 20</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="dac2b4f2-4a8f-4fe2-9067-837bca1e637c"/><con:assertion type="Schema Compliance" id="ad0241db-27bc-4f73-8d42-ed94d326704f"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="0dde7bad-00b4-40b4-8642-a67f569591fe"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read all comments: 1 comment" id="d9ffea89-2f28-405c-a6d2-1e2dbc887f63"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>read</con:operation><con:request name="Read all comments: 1 comment" id="e34a4574-6f49-4cc7-9ad5-df8be5694661"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:readAll/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b7495868-7406-48a2-a8c4-bef56aea7471"/><con:assertion type="SOAP Fault Assertion" id="28bfc5f7-3fdf-43e7-8c13-363b37139246"/><con:assertion type="Simple Contains" id="81d369b0-f7bb-48dc-a47b-ff5a45c33642" name="Contains"><con:configuration><token>(?s).*(There is 1 comment:).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="232b2b4c-055d-42be-abd2-e784844f98bf" name="Contains comment 1"><con:configuration><token>(?s).*(id=1).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Create 1 comment 2" id="a89e9ed0-fe15-4d40-888e-8b30184b7fd6"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>create</con:operation><con:request name="Create 1 comment 2" id="fe7c5eea-ec99-4c77-a8f9-b00fc3b08104"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:create>
+         <!--Optional:-->
+         <commentaire>
+            <!--Optional:-->
+            <auteur>Fan n°9999</auteur>
+            <!--Optional:-->
+            <dateCreation>2020-02-25T00:00:00</dateCreation>
+            <!--Optional:-->
+            <id>2</id>
+            <!--Optional:-->
+            <titre>Alex is definitively the best!</titre>
+         </commentaire>
+      </ser:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="dac2b4f2-4a8f-4fe2-9067-837bca1e637c"/><con:assertion type="Schema Compliance" id="ad0241db-27bc-4f73-8d42-ed94d326704f"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="0dde7bad-00b4-40b4-8642-a67f569591fe"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Read all comments: 2 comments" id="3123020c-6056-47a8-a619-4f7ce0bc3b8a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CommentaireServiceImplementationPortBinding</con:interface><con:operation>read</con:operation><con:request name="Read all comments: 2 comments" id="e34a4574-6f49-4cc7-9ad5-df8be5694661"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://alex-pc:8080/CommentaireServiceSOAP/Commentaires</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.commentaires.cours.coffreo.com/" xmlns:com="http://commentaires.cours.coffreo.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:readAll/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b7495868-7406-48a2-a8c4-bef56aea7471"/><con:assertion type="SOAP Fault Assertion" id="28bfc5f7-3fdf-43e7-8c13-363b37139246"/><con:assertion type="Simple Contains" id="81d369b0-f7bb-48dc-a47b-ff5a45c33642" name="Contains"><con:configuration><token>(?s).*(There are 2 comments:).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="232b2b4c-055d-42be-abd2-e784844f98bf" name="Contains comment 1"><con:configuration><token>(?s).*(id=1).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="232b2b4c-055d-42be-abd2-e784844f98bf" name="Contains comment 2"><con:configuration><token>(?s).*(id=2).*</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
