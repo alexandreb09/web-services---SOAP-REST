@@ -1,13 +1,13 @@
 # Web Services
 
-This project is the ranked TP from Web Service class, ISIMA ZZ3 [(source)](http://olivier.coupelon.net/t/cours-webservices).   
+This project is the ranked TP from Web Service class, ISIMA ZZ3 [(source)](http://olivier.coupelon.net/t/cours-webservices). I developped all the both project using IntelliJ.
 
 The project has three parts:
   1. Implementation of a *SOAP* service following a top-down approach.
   2. Translation of the *SOAP* service into a *REST* service.
   3. Test both services with [*SOAP UI*](https://www.soapui.org/) tools. 
 
-The service is a really simple service managing **comments**. It has 5 methods: `create`, `update`, `read`, `delete`, `readAll`. For convenience in tests, I added a `deleteAll` method. 
+The service is a simple service managing **comments**. It has 5 methods: `create`, `update`, `read`, `delete`, `readAll`. For convenience in tests, I added a `deleteAll` method. 
 
 ## I. Project Structure
  The project is composed by 5 folders:

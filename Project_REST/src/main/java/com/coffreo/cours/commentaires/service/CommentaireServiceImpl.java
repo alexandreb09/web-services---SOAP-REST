@@ -10,13 +10,14 @@ import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Path("/commentaire-service")
 @Consumes(MediaType.APPLICATION_XML)
 @Produces(MediaType.APPLICATION_XML)
 public class CommentaireServiceImpl implements CommentaireService {
 
-    private static Map<String, Commentaire> list_comments = new HashMap<>();
+    private static Map<String, Commentaire> list_comments = new ConcurrentHashMap<>();
 
     @Override
     @POST
